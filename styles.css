@@ -1,0 +1,168 @@
+body {
+  background-attachment: fixed;
+  background-image: url(images/Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: grid;
+  font-family: "Baloo Bhai 2", cursive;
+  grid-template-rows: repeat(1, 1fr 3fr 1fr);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+/* Navigation bar  */
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 25% 50% 25%);
+}
+.logo {
+  margin: 1rem 1rem 0 1rem;
+  width: 100px;
+}
+.nav-bar {
+  display: grid;
+  font-size: 1.2rem;
+  gap: 5%;
+  grid-template-columns: repeat(4, 21.25%);
+  list-style-type: none;
+  margin: 1.5rem 0 0 0;
+  padding: 0;
+}
+.nav {
+  background-color: rgb(92, 92, 92);
+  color: white;
+  display: block;
+  padding: 0.2% 2%;
+  text-align: center;
+  text-decoration: none;
+}
+.nav:hover {
+  background-color: rgba(92, 92, 92, 0.425);
+}
+.right {
+  text-align: right;
+}
+.btn {
+  background-color: #341614;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 1rem;
+  margin: 1.5rem 10% auto auto;
+  padding: 1% 2%;
+  width: auto;
+}
+.btn:hover {
+  box-shadow: 0 0 5px black;
+}
+/* Form  */
+.main {
+  height: max-content;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+.form {
+  line-height: 2;
+  text-align: center;
+}
+.input {
+  display: block;
+  line-height: 1.5;
+  margin: 10px auto;
+  text-align: center;
+}
+h1 {
+  font-size: 3rem;
+  margin: 20px 0 0 0;
+}
+p {
+  margin: auto;
+  padding: 30px;
+}
+select {
+  color: gray;
+  padding: 4px 0;
+  text-align: center;
+  width: 177px;
+  height: 19.984;
+  box-sizing: border-box;
+}
+select option {
+  color: black;
+}
+.btn-1 {
+  background-color: #341614;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 10px auto;
+  padding: 0.2rem 1rem;
+}
+.btn-1:hover {
+  box-shadow: 0 0 5px black;
+}
+/* Footer  */
+.foot {
+  text-align: center;
+}
+.foot p {
+  font-size: 0.7rem;
+  margin: auto;
+  padding: 90px 0 0 0;
+}
+/* Media Queries */
+@media (min-width: 581px) and (max-width: 880px){
+  .nav-bar li a {
+    font-size: 1rem;
+  }
+  .btn{
+    margin: 1.5rem 15% auto auto;
+  }
+  .nav-bar {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+  }
+  .logo {
+    width: 70px;
+  }
+}
+
+@media (min-width:381px) and (max-width: 580px){
+  .logo{
+    width: 50px;
+  }
+  .btn{
+    margin: 1.5rem 8% auto auto;
+    width: 80px;
+    font-size: 0.6rem;
+  }
+  .nav-bar li a {
+    font-size: 1rem;
+  }
+  .nav-bar {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+@media (max-width: 380px){
+  .logo{
+    width: 50px;
+    margin-left: 0.5rem;
+  }
+  .btn{
+    margin: 1.5rem 8% auto auto;
+    width: 60px;
+    padding: 3% 2%;
+    font-size: 0.4rem;
+  }
+  .nav-bar li a {
+    font-size: 1rem;
+  }
+  .nav-bar {
+    grid-template-columns: repeat(1,1fr);
+  }
+}
