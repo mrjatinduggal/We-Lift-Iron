@@ -113,13 +113,17 @@ select option {
   box-shadow: 0 0 5px black;
 }
 /* Footer  */
-.foot {
-  text-align: center;
+.foot{
+  position: relative;
 }
 .foot p {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   font-size: 0.7rem;
   margin: auto;
-  padding: 90px 0 0 0;
 }
 /* Media Queries */
 @media (min-width: 581px) and (max-width: 880px){
